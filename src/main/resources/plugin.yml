@@ -1,0 +1,29 @@
+name: SuperBot
+version: 1.0.0
+main: com.superbot.plugin.SuperBotPlugin
+api-version: '1.21'
+description: Advanced autonomous NPC gathering bot
+authors: [SuperBot]
+depend: [Citizens]
+
+commands:
+  spawnadvancedbot:
+    description: Spawn your SuperBot NPC
+    usage: /spawnadvancedbot
+    permission: superbot.spawn
+  removebot:
+    description: Remove your SuperBot NPC
+    usage: /removebot
+    permission: superbot.spawn
+  superbotreload:
+    description: Reload SuperBot config
+    usage: /superbotreload
+    permission: superbot.admin
+
+permissions:
+  superbot.spawn:
+    description: Allows spawning a SuperBot
+    default: op
+  superbot.admin:
+    description: Admin commands
+    default: op
